@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1></h1>
+
+ <!--templates Tecnica para evitar Reflow dnd haya mucho contenido 
+        mas eficiente que Fragment o innerHtml-->
+        <ul id="listaDinamica"></ul>
+
+        <template id="liTemplate">
+            <li class="list">
+                <b>País: </b> <span class="text-primary"></span>
+            </li>
+        </template>
+        
+    <script src="app/app.js"></script>
+</body>
+
+</html>

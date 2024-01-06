@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1></h1>
+
+    <!--Burbujeo y Captura, stopPropagation, preventDefault, Delegacion de Eventos-->
+    <div id="delegateEvent" class="container">
+        <div class="border border-primary border-5 py-5 m-3" data-div="divPadre">
+            Lorem, ipsum dolor 1
+            <div id="hijo" class="border border-secondary border-5 py-5 m-3" data-div="divHijo">
+                Lorem, ipsum dolor 2
+                <div class="border border-danger border-5 py-5 m-3" data-div="divNieto">
+                    Lorem, ipsum dolor 3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app/app.js"></script>
+</body>
+
+</html>

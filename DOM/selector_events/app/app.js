@@ -1,0 +1,13 @@
+//DOM Selectores ( ) y Eventos (AddeventListener()) ------------------------------
+const inputColor = document.getElementById("inputColor");
+const boton = document.getElementById("boton");
+const textoHexa = document.getElementById("textoHexa");
+const cardColor = document.getElementById("cardColor");
+
+console.log(inputColor.value);
+
+boton.addEventListener("click", () => {
+    console.log(inputColor.value);
+    textoHexa.textContent = inputColor.value;
+    cardColor.style.backgroundColor = inputColor.value;
+});
